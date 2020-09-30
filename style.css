@@ -1,81 +1,103 @@
-img{
-    position: absolute;
-    top: 35%;
-    left: 43%;
-    text-align: center;
+body{
+    margin: 0;
 }
 
-.nav_bar{
-    display: flex;
-    margin: 5px;
-    padding: 0px;
-    border-radius: 5px;
-    outline: none;
-    font-size: large;
-    border-radius: 10px;
-    width: 25%;
-    top: 45%;
-    left: 37%;
-    position: absolute;
-
-}
-
-#button{
-    padding: 10px;
-    border-radius: 4px;
-    margin: 15px 4px;
-    background-color: #f8f8f8;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    border: 1px solid #c6c6c6;
-}
-
-.middle_button{
-    top: 48%;
-    display:inline;
-    flex-direction: row;
-    left: 43%;
-    position: fixed;
-}
-
-ul {
-    position: relative;
-    list-style-type: none;
-    font-family:Arial, sans-serif;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-}
-
-li {
-    position: relative;
-    display:inline;
-    padding: 10px;
-    margin: 0px;
+ul{
     font-size: 13px;
-    color: #5f6368;}
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
 
-.leftHead{
+li{
+    display: inline;
+    padding: 15px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.top_nav{
+    position: static;
+    top: 0%;
+    width: 100%;
+}
+
+#topLeft_nav{
     float: left;
     padding: 10px;
 }
 
-.rightHead {
+
+#topRight_nav{
     float: right;
     padding: 10px;
 }
 
-.bottomNav{
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;   
+img{
+    display: flex;
+    justify-content: center;
+    top:50%;
+
+}
+
+.bottom_nav{
+    bottom:0;
+    position: fixed;
+    width: 100%;
     background-color: lightgray;
-    margin: 0px;
-    padding: 10px;
+}
+
+#bottomLeft_nav{
+    float:left;
+    padding:15px;
+}
+
+#bottomRight_nav{
+    float: right;
+    padding: 15px;
 }
 
 
-#font{
-    color: #5f6368;
-    padding:10px;
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5cm;
+    position: relative;
+}
+
+.search_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#text_box{
+    width: 25%;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: medium;
+}
+
+button{
+    position: relative;
+    left: 42%;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin: 20px;
+    border: 1px solid #f2f2f2;
+}
+
+button:hover{
+    color: black;
+    border: 1px solid lightgray;
 }
